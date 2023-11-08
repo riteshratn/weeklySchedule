@@ -1,0 +1,5 @@
+2023-11-06T11:52:37.413Z [error]: Expected ',' or ']' after array element in JSON at position 164
+2023-11-06T12:01:15.649Z [error]: Bad control character in string literal in JSON at position 153
+6/11/2023, 6:35:05 pm [error]: Expected ',' or ']' after array element in JSON at position 66
+2023-11-07T03:47:25.490Z [error]: Unexpected non-whitespace character after JSON at position 52
+2023-11-08T10:54:13.632Z [error]: Expected ',' or ']' after array element in JSON at position 155
