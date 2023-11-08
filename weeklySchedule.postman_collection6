@@ -1,0 +1,502 @@
+{
+	"info": {
+		"_postman_id": "6a9780ef-7b41-4d7b-986a-91dde1bbd3f3",
+		"name": "weeklySchedule",
+		"description": "A simple Project on Node.js",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29795896"
+	},
+	"item": [
+		{
+			"name": "user Register",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoiMDkyM3JpdGVzaGt1bWFyQGdtYWlsLmNvbSIsImlkIjoiNjU0NGUxYWM4ZGM5ZGFhMTE1NTYxMzgzIn0sImlhdCI6MTY5OTMzNzA5OCwiZXhwIjoxNjk5MzQwNjk4fQ.8yZZMb4Cwj2LN9LZjr5IhpgY9iGBoEKRUbASSSjnhe8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"pranav@gmail.com\",\r\n  \"password\": \"12345\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user Login",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoiMDkyM3JpdGVzaGt1bWFyQGdtYWlsLmNvbSIsImlkIjoiNjU0NGUxYWM4ZGM5ZGFhMTE1NTYxMzgzIn0sImlhdCI6MTY5OTMzNzA5OCwiZXhwIjoxNjk5MzQwNjk4fQ.8yZZMb4Cwj2LN9LZjr5IhpgY9iGBoEKRUbASSSjnhe8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"pranav@gmail.com\",\r\n  \"password\": \"12345\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LoggedIn user",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoiMDkyM3JpdGVzaGt1bWFyQGdtYWlsLmNvbSIsImlkIjoiNjU0NGUxYWM4ZGM5ZGFhMTE1NTYxMzgzIn0sImlhdCI6MTY5OTMzNzA5OCwiZXhwIjoxNjk5MzQwNjk4fQ.8yZZMb4Cwj2LN9LZjr5IhpgY9iGBoEKRUbASSSjnhe8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"riteshkumar@gmail.com\",\r\n  \"password\": \"123456\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/current",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"current"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Weekdata",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoicHJhbmF2QGdtYWlsLmNvbSIsImlkIjoiNjU0YTAyN2I1NmYzOWZjMzU2OTVhYzBmIn0sImlhdCI6MTY5OTM1NjM5MywiZXhwIjoxNjk5MzU5OTkzfQ.yRKXV009uNLFxILeSP9kENP-IUML8oNJnTqLYb3vOqA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/week",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"week"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update weekData",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoicHJhbmF2QGdtYWlsLmNvbSIsImlkIjoiNjU0YTAyN2I1NmYzOWZjMzU2OTVhYzBmIn0sImlhdCI6MTY5OTM1NjM5MywiZXhwIjoxNjk5MzU5OTkzfQ.yRKXV009uNLFxILeSP9kENP-IUML8oNJnTqLYb3vOqA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n{\r\n  \"name\": \"Monday\",\r\n  \"text\": \"working day\"\r\n},\r\n{\r\n  \"name\": \"Tuesday\",\r\n  \"text\":\"coding time\"\r\n},\r\n{\r\n  \"name\": \"Sunday\",\r\n  \"text\":\"Chess\"\r\n},\r\n{\r\n    \"name\":\"Notes\",\r\n    \"text\": \"notes likho\"\r\n}\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/week",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"week"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get exercises",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoiMDkyM3JpdGVzaGt1bWFyQGdtYWlsLmNvbSIsImlkIjoiNjU0NGUxYWM4ZGM5ZGFhMTE1NTYxMzgzIn0sImlhdCI6MTY5OTMzNzA5OCwiZXhwIjoxNjk5MzQwNjk4fQ.8yZZMb4Cwj2LN9LZjr5IhpgY9iGBoEKRUbASSSjnhe8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/exercises",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"exercises"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post exercises",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoiMDkyM3JpdGVzaGt1bWFyQGdtYWlsLmNvbSIsImlkIjoiNjU0NGUxYWM4ZGM5ZGFhMTE1NTYxMzgzIn0sImlhdCI6MTY5OTMzNzA5OCwiZXhwIjoxNjk5MzQwNjk4fQ.8yZZMb4Cwj2LN9LZjr5IhpgY9iGBoEKRUbASSSjnhe8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"name\": \"Exercise 42\",\r\n    \"duration\": \"15:13\",\r\n    \"break\": 32\r\n  },\r\n  {\r\n    \"name\": \"Exercise 43\",\r\n    \"duration\": \"10:41\",\r\n    \"break\": 35\r\n  }\r\n]\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/exercises",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"exercises"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete exercise",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoiMDkyM3JpdGVzaGt1bWFyQGdtYWlsLmNvbSIsImlkIjoiNjU0NGUxYWM4ZGM5ZGFhMTE1NTYxMzgzIn0sImlhdCI6MTY5OTMzNzA5OCwiZXhwIjoxNjk5MzQwNjk4fQ.8yZZMb4Cwj2LN9LZjr5IhpgY9iGBoEKRUbASSSjnhe8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/exercises/6549d4ef73321c772b9e7d16",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"exercises",
+						"6549d4ef73321c772b9e7d16"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get rough-pad",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoiMDkyM3JpdGVzaGt1bWFyQGdtYWlsLmNvbSIsImlkIjoiNjU0NGUxYWM4ZGM5ZGFhMTE1NTYxMzgzIn0sImlhdCI6MTY5OTMzNzA5OCwiZXhwIjoxNjk5MzQwNjk4fQ.8yZZMb4Cwj2LN9LZjr5IhpgY9iGBoEKRUbASSSjnhe8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/rough-pad",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"rough-pad"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create or update rough-pad",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoiMDkyM3JpdGVzaGt1bWFyQGdtYWlsLmNvbSIsImlkIjoiNjU0NGUxYWM4ZGM5ZGFhMTE1NTYxMzgzIn0sImlhdCI6MTY5OTMzNzA5OCwiZXhwIjoxNjk5MzQwNjk4fQ.8yZZMb4Cwj2LN9LZjr5IhpgY9iGBoEKRUbASSSjnhe8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n    \"text\": \"Hi, my name is Ritesh Kumar. I love playing chess.\"\r\n  }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/rough-pad",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"rough-pad"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update notification",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoiMDkyM3JpdGVzaGt1bWFyQGdtYWlsLmNvbSIsImlkIjoiNjU0NGUxYWM4ZGM5ZGFhMTE1NTYxMzgzIn0sImlhdCI6MTY5OTMzNzA5OCwiZXhwIjoxNjk5MzQwNjk4fQ.8yZZMb4Cwj2LN9LZjr5IhpgY9iGBoEKRUbASSSjnhe8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"heading\": \"title name\",\r\n    \"text\": \"you have a new notification.\",\r\n    \"interval\": \"12\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/notification",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"notification"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get notifications",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoiMDkyM3JpdGVzaGt1bWFyQGdtYWlsLmNvbSIsImlkIjoiNjU0NGUxYWM4ZGM5ZGFhMTE1NTYxMzgzIn0sImlhdCI6MTY5OTMzNzA5OCwiZXhwIjoxNjk5MzQwNjk4fQ.8yZZMb4Cwj2LN9LZjr5IhpgY9iGBoEKRUbASSSjnhe8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/notification",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"notification"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
